@@ -201,7 +201,6 @@ dictionary = corpora.Dictionary(term_vec)
 doc_term_matrix = [dictionary.doc2bow(doc) for doc in term_vec]
 
 #Creating trained model to evaluate coherence scores
-# takes FOREVER to run 
 Lda = models.LdaMulticore
 coherenceList_umass = []
 coherenceList_cv = []
